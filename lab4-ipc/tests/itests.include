@@ -1,0 +1,11 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+run_test    INTEG_fork                "cksum ../data/f1.txt"
+run_test    INTEG_fork_no_exec        "asldkfja ../data/f1.txt"
+run_test    INTEG_fork_no_file        "cksum ../data/f4.txt"
+run_test    INTEG_spawn               "-s shasum ../data/f2.txt"
+run_test    INTEG_spawn_no_exec       "-s asldkfja ../data/f1.txt"
+run_test    INTEG_spawn_no_file       "-s shasum ../data/f5.txt"

@@ -1,0 +1,15 @@
+==953309== Memcheck, a memory error detector
+==953309== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==953309== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==953309== Command: ../net localhost
+==953309== 
+localhost http: TCP IPv4 127.0.0.1
+==953309== 
+==953309== HEAP SUMMARY:
+==953309==     in use at exit: 0 bytes in 0 blocks
+==953309==   total heap usage: 39 allocs, 39 frees, 35,619 bytes allocated
+==953309== 
+==953309== All heap blocks were freed -- no leaks are possible
+==953309== 
+==953309== For lists of detected and suppressed errors, rerun with: -s
+==953309== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

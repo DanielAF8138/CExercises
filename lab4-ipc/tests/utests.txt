@@ -1,0 +1,14 @@
+Running suite(s): Default
+
+======================================
+UNIT_result
+Gets cksum of data/f1.txt
+
+======================================
+UNIT_child
+Passes a pipe to create_child for the file data/f1.txt
+
+======================================
+UNIT_spawn
+Gets cksum of data/f1.txt
+100%: Checks: 3, Failures: 0, Errors: 0

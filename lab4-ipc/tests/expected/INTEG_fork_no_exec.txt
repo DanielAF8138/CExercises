@@ -1,0 +1,1 @@
+asldkfja(../data/f1.txt) = ''

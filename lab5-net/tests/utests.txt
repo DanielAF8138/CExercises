@@ -1,0 +1,71 @@
+Running suite(s): Default
+======================================
+PUBLIC
+  UNIT addr string localhost v4
+  Convert 32-bit integer address for localhost
+  into dotted-decimal 127.0.0.1 string format.
+
+  IPv4 address for localhost is '127.0.0.1'
+
+======================================
+PUBLIC
+  UNIT get server list localhost
+  Use getaddrinfo() to gather information about localhost
+  for the HTTP protocol with IPv4. Requires network access
+  to get information from DNS.
+
+  IPv4 address for localhost is 0x7f000001
+
+======================================
+PUBLIC
+  UNIT serv string localhost
+  Converts a struct addrinfo into a string that contains
+  the transport-layer protocol, IP version, and IP address
+  in the appropriate format.
+
+  Server information for localhost: 'TCP IPv4 127.0.0.1'
+
+======================================
+PRIVATE:
+  UNIT get server list localhost v6
+  Convert a localhost addrinfo to IPv6 address. Requires
+  network access to query DNS.
+
+  IPv6 address for localhost is ::1
+
+======================================
+PRIVATE:
+  UNIT get server list ns3 dns v4
+  Convert a ns3.jmu.edu addrinfo to IPv4 address. Requires
+  network access to query DNS.
+
+  IPv4 address for localhost is 134.126.115.46
+
+======================================
+PRIVATE:
+  UNIT serv string w3 v4
+  Convert a w3.cs.jmu.edu addrinfo to a string that contains
+  the transport-layer protocol, IP version, and IP address
+  in the appropriate format.
+
+  Server information for w3.cs.jmu.edu: 'TCP IPv4 134.126.20.33'
+
+======================================
+PRIVATE:
+  UNIT serv string w3 v6
+  Convert a w3.cs.jmu.edu addrinfo to a string that contains
+  the transport-layer protocol, IP version, and IP address
+  in the appropriate format.
+
+  Server information for w3.cs.jmu.edu: 'no address information'
+
+======================================
+PRIVATE:
+  UNIT serv str ns3 v4
+  Convert a ns3.jmu.edu addrinfo to a string that contains
+  the transport-layer protocol, IP version, and IP address
+  in the appropriate format.
+
+  Server information for ns3.jmu.edu: 'UDP IPv4 134.126.115.46'
+
+100%: Checks: 8, Failures: 0, Errors: 0

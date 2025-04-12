@@ -1,0 +1,4 @@
+client.c                       pass
+client.h                       pass
+main.c                         pass
+Code correctly adheres to required style.

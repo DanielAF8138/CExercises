@@ -1,0 +1,1 @@
+shasum(../data/f2.txt) = 'e7d9b82b45d5833c9dada13f2379e7b66c823434  ../data/f2.txt'

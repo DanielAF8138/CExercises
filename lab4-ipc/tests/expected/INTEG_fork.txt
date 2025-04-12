@@ -1,0 +1,1 @@
+cksum(../data/f1.txt) = '3015617425 6 ../data/f1.txt'

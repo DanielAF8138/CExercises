@@ -1,0 +1,15 @@
+==953439== Memcheck, a memory error detector
+==953439== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==953439== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==953439== Command: ../net -6 -p 53 ns3.jmu.edu
+==953439== 
+ns3.jmu.edu 53: UDP IPv6 ::ffff:134.126.115.46
+==953439== 
+==953439== HEAP SUMMARY:
+==953439==     in use at exit: 0 bytes in 0 blocks
+==953439==   total heap usage: 39 allocs, 39 frees, 37,184 bytes allocated
+==953439== 
+==953439== All heap blocks were freed -- no leaks are possible
+==953439== 
+==953439== For lists of detected and suppressed errors, rerun with: -s
+==953439== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

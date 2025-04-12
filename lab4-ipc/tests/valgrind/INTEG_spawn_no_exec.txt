@@ -1,0 +1,30 @@
+==3308181== Memcheck, a memory error detector
+==3308181== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==3308181== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3308181== Command: ../ipc -s asldkfja ../data/f1.txt
+==3308181== 
+==3308209== 
+==3308209== HEAP SUMMARY:
+==3308209==     in use at exit: 256 bytes in 1 blocks
+==3308209==   total heap usage: 1 allocs, 0 frees, 256 bytes allocated
+==3308209== 
+==3308209== LEAK SUMMARY:
+==3308209==    definitely lost: 0 bytes in 0 blocks
+==3308209==    indirectly lost: 0 bytes in 0 blocks
+==3308209==      possibly lost: 0 bytes in 0 blocks
+==3308209==    still reachable: 256 bytes in 1 blocks
+==3308209==         suppressed: 0 bytes in 0 blocks
+==3308209== Rerun with --leak-check=full to see details of leaked memory
+==3308209== 
+==3308209== For lists of detected and suppressed errors, rerun with: -s
+==3308209== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+asldkfja(../data/f1.txt) = ''
+==3308181== 
+==3308181== HEAP SUMMARY:
+==3308181==     in use at exit: 0 bytes in 0 blocks
+==3308181==   total heap usage: 4 allocs, 4 frees, 8,549 bytes allocated
+==3308181== 
+==3308181== All heap blocks were freed -- no leaks are possible
+==3308181== 
+==3308181== For lists of detected and suppressed errors, rerun with: -s
+==3308181== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
