@@ -1,0 +1,2 @@
+[Init.TOKEN -> Command]
+Starting new command: ls

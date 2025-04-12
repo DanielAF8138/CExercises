@@ -1,0 +1,3 @@
+I am the child
+Child exited with status 54
+I am the parent

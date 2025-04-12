@@ -1,0 +1,15 @@
+[Init.TOKEN -> Command]
+Starting new command: ls
+[Command.TOKEN -> Arguments]
+Appending -l to the argument list
+[Arguments.PIPE -> Make_Pipe]
+Set up pipe
+Execute ls with arguments { ls, -l, (null) }
+[Make_Pipe.TOKEN -> Command]
+Starting new command: head
+[Command.TOKEN -> Arguments]
+Appending -n to the argument list
+[Arguments.TOKEN -> Arguments]
+Appending 1 to the argument list
+[Arguments.NEWLINE -> Term]
+Execute head with arguments { head, -n, 1, (null) }

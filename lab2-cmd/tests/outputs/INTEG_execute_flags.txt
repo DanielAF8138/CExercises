@@ -1,0 +1,8 @@
+[Init.TOKEN -> Command]
+Starting new command: ls
+[Command.TOKEN -> Arguments]
+Appending -a to the argument list
+[Arguments.TOKEN -> Arguments]
+Appending -l to the argument list
+[Arguments.NEWLINE -> Term]
+Execute ls with arguments { ls, -a, -l, (null) }

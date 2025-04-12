@@ -1,0 +1,6 @@
+[Init.TOKEN -> Command]
+Starting new command: ls
+[Command.TOKEN -> Arguments]
+Appending data to the argument list
+[Arguments.NEWLINE -> Term]
+Execute ls with arguments { ls, data, (null) }

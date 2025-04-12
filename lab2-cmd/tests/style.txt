@@ -1,0 +1,6 @@
+effects.c                      pass
+effects.h                      pass
+main.c                         pass
+model.c                        pass
+model.h                        pass
+Code correctly adheres to required style.

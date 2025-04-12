@@ -1,0 +1,18 @@
+==3073903== Memcheck, a memory error detector
+==3073903== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==3073903== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==3073903== Command: ../ptrs -m
+==3073903== 
+Title: The Shawshank Redemption
+Year: 1994
+Genre: Drama
+The Shawshank Redemption [1994] - Drama
+==3073903== 
+==3073903== HEAP SUMMARY:
+==3073903==     in use at exit: 0 bytes in 0 blocks
+==3073903==   total heap usage: 5 allocs, 5 frees, 8,299 bytes allocated
+==3073903== 
+==3073903== All heap blocks were freed -- no leaks are possible
+==3073903== 
+==3073903== For lists of detected and suppressed errors, rerun with: -s
+==3073903== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

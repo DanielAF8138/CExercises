@@ -1,0 +1,3 @@
+Child has started
+Breaking out with signal 2
+Child was stopped with status 37

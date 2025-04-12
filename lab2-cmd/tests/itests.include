@@ -1,0 +1,11 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+run_test    INTEG_command         "ls"
+run_test    INTEG_execute         "ls NL"
+run_test    INTEG_execute_name    "ls data NL"
+run_test    INTEG_execute_flags   "ls -a -l NL"
+run_test    INTEG_pipe            "ls | head NL"
+run_test    INTEG_pipe_flags      "ls -l | head -n 1 NL"
