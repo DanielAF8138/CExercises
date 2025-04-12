@@ -1,0 +1,10 @@
+Received incoming request from 127.0.0.1
+GET request for /non_existent.html
+Bytes written to socket: -1
+
+++++++++++++++++++++++++++++
+Client received
+++++++++++++++++++++++++++++
+HTTP/1.0 404 Not Found
+
+++++++++++++++++++++++++++++

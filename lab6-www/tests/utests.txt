@@ -1,0 +1,89 @@
+Running suite(s): Default
+======================================
+PUBLIC
+  UNIT build address
+  Build a struct sockaddr_in for localhost, port 80
+======================================
+PUBLIC
+  UNIT build response header
+  Given a request for index.html, get the full
+  response with the headers and the file contents. The hexdump
+  of the response should be:
+    48 54 54 50 2f 31 2e 30 20 32 30 30 20 4f 4b 0d  | HTTP/1.0 200 OK. |
+    0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74  | .Content-Type: t |
+    65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65  | ext/html; charse |
+    74 3d 55 54 46 2d 38 0d 0a 43 6f 6e 74 65 6e 74  | t=UTF-8..Content |
+    2d 4c 65 6e 67 74 68 3a 20 31 31 39 0d 0a 0d 0a  | -Length: 119.... |
+    3c 68 74 6d 6c 3e 0a 20 20 3c 68 65 61 64 3e 0a  | <html>.  <head>. |
+    20 20 20 20 3c 74 69 74 6c 65 3e 53 75 63 63 65  |     <title>Succe |
+    73 73 21 3c 2f 74 69 74 6c 65 3e 0a 20 20 3c 2f  | ss!</title>.  </ |
+    68 65 61 64 3e 0a 0a 20 20 3c 62 6f 64 79 3e 0a  | head>..  <body>. |
+    20 20 20 20 3c 68 32 3e 49 74 20 3c 69 3e 72 65  |     <h2>It <i>re |
+    61 6c 6c 79 3c 2f 69 3e 20 77 6f 72 6b 73 21 3c  | ally</i> works!< |
+    2f 68 32 3e 0a 20 20 3c 2f 62 6f 64 79 3e 0a 3c  | /h2>.  </body>.< |
+    2f 68 74 6d 6c 3e 0a                             | /html>.          |
+GET request for /index.html
+
+  Your response has the following hexdump:
+    48 54 54 50 2f 31 2e 30 20 32 30 30 20 4f 4b 0d  | HTTP/1.0 200 OK. |
+    0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74  | .Content-Type: t |
+    65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65  | ext/html; charse |
+    74 3d 55 54 46 2d 38 0d 0a 43 6f 6e 74 65 6e 74  | t=UTF-8..Content |
+    2d 4c 65 6e 67 74 68 3a 20 31 31 39 0d 0a 0d 0a  | -Length: 119.... |
+    3c 68 74 6d 6c 3e 0a 20 20 3c 68 65 61 64 3e 0a  | <html>.  <head>. |
+    20 20 20 20 3c 74 69 74 6c 65 3e 53 75 63 63 65  |     <title>Succe |
+    73 73 21 3c 2f 74 69 74 6c 65 3e 0a 20 20 3c 2f  | ss!</title>.  </ |
+    68 65 61 64 3e 0a 0a 20 20 3c 62 6f 64 79 3e 0a  | head>..  <body>. |
+    20 20 20 20 3c 68 32 3e 49 74 20 3c 69 3e 72 65  |     <h2>It <i>re |
+    61 6c 6c 79 3c 2f 69 3e 20 77 6f 72 6b 73 21 3c  | ally</i> works!< |
+    2f 68 32 3e 0a 20 20 3c 2f 62 6f 64 79 3e 0a 3c  | /h2>.  </body>.< |
+    2f 68 74 6d 6c 3e 0a                             | /html>.          |
+
+  Note that 0a is \n and 0d is \r
+======================================
+PUBLIC
+  UNIT build response non exist
+  Given a GET request for yadda.txt, get the URI
+GET request for /yadda.txt
+======================================
+PUBLIC
+  UNIT build response bad
+  Given a bad request ("GETyadda.txt"), should get NULL
+Failed to get URI
+======================================
+PRIVATE
+  UNIT read request root
+  Given a GET request for /, get the full response with headers
+  and the file contents. The hexdump of the response should be:
+    48 54 54 50 2f 31 2e 30 20 32 30 30 20 4f 4b 0d  | HTTP/1.0 200 OK. |
+    0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74  | .Content-Type: t |
+    65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65  | ext/html; charse |
+    74 3d 55 54 46 2d 38 0d 0a 43 6f 6e 74 65 6e 74  | t=UTF-8..Content |
+    2d 4c 65 6e 67 74 68 3a 20 31 31 39 0d 0a 0d 0a  | -Length: 119.... |
+    3c 68 74 6d 6c 3e 0a 20 20 3c 68 65 61 64 3e 0a  | <html>.  <head>. |
+    20 20 20 20 3c 74 69 74 6c 65 3e 53 75 63 63 65  |     <title>Succe |
+    73 73 21 3c 2f 74 69 74 6c 65 3e 0a 20 20 3c 2f  | ss!</title>.  </ |
+    68 65 61 64 3e 0a 0a 20 20 3c 62 6f 64 79 3e 0a  | head>..  <body>. |
+    20 20 20 20 3c 68 32 3e 49 74 20 3c 69 3e 72 65  |     <h2>It <i>re |
+    61 6c 6c 79 3c 2f 69 3e 20 77 6f 72 6b 73 21 3c  | ally</i> works!< |
+    2f 68 32 3e 0a 20 20 3c 2f 62 6f 64 79 3e 0a 3c  | /h2>.  </body>.< |
+    2f 68 74 6d 6c 3e 0a                             | /html>.          |
+GET request for /index.html
+
+  Your response has the following hexdump:
+    48 54 54 50 2f 31 2e 30 20 32 30 30 20 4f 4b 0d  | HTTP/1.0 200 OK. |
+    0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74  | .Content-Type: t |
+    65 78 74 2f 68 74 6d 6c 3b 20 63 68 61 72 73 65  | ext/html; charse |
+    74 3d 55 54 46 2d 38 0d 0a 43 6f 6e 74 65 6e 74  | t=UTF-8..Content |
+    2d 4c 65 6e 67 74 68 3a 20 31 31 39 0d 0a 0d 0a  | -Length: 119.... |
+    3c 68 74 6d 6c 3e 0a 20 20 3c 68 65 61 64 3e 0a  | <html>.  <head>. |
+    20 20 20 20 3c 74 69 74 6c 65 3e 53 75 63 63 65  |     <title>Succe |
+    73 73 21 3c 2f 74 69 74 6c 65 3e 0a 20 20 3c 2f  | ss!</title>.  </ |
+    68 65 61 64 3e 0a 0a 20 20 3c 62 6f 64 79 3e 0a  | head>..  <body>. |
+    20 20 20 20 3c 68 32 3e 49 74 20 3c 69 3e 72 65  |     <h2>It <i>re |
+    61 6c 6c 79 3c 2f 69 3e 20 77 6f 72 6b 73 21 3c  | ally</i> works!< |
+    2f 68 32 3e 0a 20 20 3c 2f 62 6f 64 79 3e 0a 3c  | /h2>.  </body>.< |
+    2f 68 74 6d 6c 3e 0a                             | /html>.          |
+
+  Note that 0a is \n and 0d is \r
+100%: Checks: 5, Failures: 0, Errors: 0

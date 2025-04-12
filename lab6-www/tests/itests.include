@@ -1,0 +1,9 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+run_test    INTEG_index               "GET /index.html HTTP/1.0"
+run_test    INTEG_bootstrap           "GET /bootstrap.html HTTP/1.0"
+run_test    INTEG_root                "GET / HTTP/1.0"
+run_test    INTEG_404                 "GET /non_existent.html HTTP/1.0"
